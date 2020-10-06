@@ -1,12 +1,139 @@
-* {
-    background-color: rgb(255,153,21);
+body {
+    background-color: rgb(#ff672a);
     margin: 0;
+    padding: 0;
 }
 
-nav{
-    background-color: rgb(221, 218, 218);
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
-.project-tile img{
-    width: 300px;
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f7ec32;
 }
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 2rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #7f54a3;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    background: #ff672a;
+}
+
+figure img {
+    width: 20rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font: bold 5rem sans-serif;;
+    color: #7f54a3;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background-image: linear-gradient(45deg, #73cdda 0%, #f7ec32 100%);
+}
+
+#projects {
+    background: #73cdda;
+}
+
+.projects-section {
+    text-align: center;
+    color: #7f54a3;
+    padding: 5rem 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    background-color: #73cdda;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+#contact {
+    background-image: linear-gradient(45deg, #f26730 0%, #73cdda 100%);
+}
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+  }
+  
+  .contact-section-header > h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    padding: 4rem;
+    color: #7f54a3;
+    font: bold 5rem sans-serif;
+  }
+  
+  @media (max-width: 28.75em) {
+    .contact-section-header > h2 {
+      font-size: 4rem;
+    }
+  }
+  
+  .contact-section-header > p {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: #7f54a3;
+    font-size: 2rem;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    font: bold 1em sans-serif;
+  }
+  
+  .contact-details {
+    font-size: 2.4rem;
+    color: #7f54a3;
+    text-decoration: none;
+    transition: transform 0.3s ease-out;
+    text-shadow: 2px 2px 1px #520492;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
