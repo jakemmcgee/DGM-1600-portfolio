@@ -14,6 +14,13 @@ html {
     display: flex;
     justify-content: flex-end;
     background-color: #f7ec32;
+    font: bold 3rem sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
 .nav-list {
@@ -34,14 +41,36 @@ html {
     background: #ff672a;
 }
 
-figure img {
-    width: 20rem;
-}
-
 h1 {
     font-size: 4rem;
-    font: bold 5rem sans-serif;;
+    font: bold 5rem sans-serif;
     color: #7f54a3;
+}
+
+h3 {
+    font: bold 2rem sans-serif;
+    color: #7f54a3;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    background: #ff672a;
+    background-color: rgba(#ff672a, 0.6);
+    position: relative;
+    top: -5px;
+    height: 20px;
+    color: #7f54a3;
+    font: bold 0.5rem sans-serif;
 }
 
 #welcome-section {
@@ -51,7 +80,6 @@ h1 {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
     background-image: linear-gradient(45deg, #73cdda 0%, #f7ec32 100%);
 }
 
@@ -62,7 +90,15 @@ h1 {
 .projects-section {
     text-align: center;
     color: #7f54a3;
-    padding: 5rem 2rem;
+    padding: 10rem 2rem;
+    background: #73cdda;
+    /* width 100% */
+}
+
+.project-tile {
+    font-size: 2rem;
+  padding: 2rem 0.5rem;
+
 }
 
 .projects-grid {
@@ -70,15 +106,9 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
     background-color: #73cdda;
-    width: 100%;
-    max-width: 1280px;
+    /* width: 100% */
     margin: 0 auto;
     margin-bottom: 6rem;
-}
-
-#contact {
-    background-image: linear-gradient(45deg, #f26730 0%, #73cdda 100%);
-}
 }
 
 .contact-section {
@@ -87,9 +117,17 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    /* width: 100% */
     height: 80vh;
     padding: 0 2rem;
+    background: #ff672a;
+    background-image: linear-gradient(45deg, #f26730 0%, #73cdda 100%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
   }
   
   .contact-section-header > h3 {
@@ -99,14 +137,13 @@ h1 {
     padding: 4rem;
     color: #7f54a3;
     font: bold 5rem sans-serif;
-  }
+}
   
   @media (max-width: 28.75em) {
     .contact-section-header > h2 {
       font-size: 4rem;
     }
-  }
-  
+}
   .contact-section-header > p {
     display: flex;
     justify-content: center;
@@ -117,7 +154,7 @@ h1 {
   
   .contact-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 2rem;
     width: 100%;
     max-width: 980px;
@@ -135,5 +172,31 @@ h1 {
   }
   
   .contact-details:hover {
-    transform: translateY(8px);
+    transform: translateY(6px);
+  }
+
+  footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+  }
+  
+  footer > p {
+    margin: 2rem;
+    font: bold 0.5rem sans-serif;
+    color: #ff672a;
+  }
+  
+  footer i {
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
   }
