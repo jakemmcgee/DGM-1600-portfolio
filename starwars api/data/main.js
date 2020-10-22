@@ -19,3 +19,18 @@ mainTitle6.textContent = films[5].title
     console.log(film.title)
     mainTitle1.textContent = films.title
 } */
+
+const main = document.querySelector('main')
+
+for (let i = 0; i < 7;; i++) {
+    let figure = document.createElement('figure')
+    let figImg = document.createElement('img')
+    figImg.src = '' + (i + 1) + '.jpg'
+    let figCaption = document.createElement('figcaption')
+    figCaption.textContent = films[i].title
+
+    figure.appendChild(figImg)
+    figure.appendChild(figCaption)
+
+    mainTitle6.appendChild(figure)
+}
