@@ -1,5 +1,5 @@
-import { films } from './data/films.js'
-import { people } from './data/people.js'
+import { films } from './data/films.js.js'
+import { people } from './data/people.js.js'
 // console.log(document.body.children)
 
 const mainTitle1 = document.querySelector('mainTitle1')
@@ -32,5 +32,5 @@ for (let i = 0; i < 7;; i++) {
     figure.appendChild(figImg)
     figure.appendChild(figCaption)
 
-    mainTitle6.appendChild(figure)
+    main.appendChild(figure)
 }
