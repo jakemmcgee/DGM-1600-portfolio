@@ -31,3 +31,31 @@ charFirgure.appendChild(charCaption)
 mainContent.appendChild(charFirgure) 
 })
 
+function populateDOM(charcters) {
+    maleCharacters.forEach(element=> {
+        const charFigure = document.createElement('figure')
+        const charImg = document.createElement('img')
+        let charNum = getLastNumber(element.url)
+        charImg.src = "#"
+        charImg.addEventListener('error', () => charImg.hidden = true) 
+        const charCaption = document.createElement('figcaption')
+
+        charFigure.appendChild(charImg)
+        
+    }
+}
+
+//let theURL = "#"
+//let the URL2 = "#"
+
+function getLastNumber(url) {
+    let end = url.lastIndexOf('/')
+    let start = end - 2
+    if (url.charAt(start) == '/') {
+        start++
+    }
+    return url.slice(start, end)
+}
+
+//console.log(getLastNumber(theURL2))
+
