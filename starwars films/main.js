@@ -1,5 +1,14 @@
-import { films } from './data/films.js.js'
-import { people } from './data/people.js.js'
+import { films } from './data/films.js'
+
+//console.log(document.body.children)
+
+const mainTitle1 = document.querySelector('#mainTitle1')
+mainTitle1.textContent = films[0].title
+
+/* films.forEach(film => {
+    mainTitle1.textContent = films.title
+}) */
+import { people } from './data/people.js'
 // console.log(document.body.children)
 
 const mainTitle1 = document.querySelector('mainTitle1')
