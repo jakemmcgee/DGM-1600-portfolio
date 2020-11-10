@@ -1,0 +1,10 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mainFrame {
+    height: 100vh;
+    
+}
