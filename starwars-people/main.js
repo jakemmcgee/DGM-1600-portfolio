@@ -2,6 +2,8 @@ import { people } from '../data/people.js'
 
 const mainContent = document.querySelector('main')
 
+populateDOM(people)
+
 const mainHeader = document.createElement('header')
 mainHeader.className = 'mainHeader'
 document.body.appendChild(mainHeader)
@@ -23,7 +25,9 @@ const maleCharacters = people.filter(person => person.gender === 'male')
 const femaleCharacters = people.filter(person => person.gender === 'female')
 
 const otherCharacters = people.filter(person => {
-    if (person.gender === 'n/a' || person.gender === 'none') {
+    if (person.gender === 'n/a' ||
+    person.gender === 'none' ||
+    person.gender === 'hermaphrodite') {
         return person
     }
 })
