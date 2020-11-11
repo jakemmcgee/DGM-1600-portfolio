@@ -3,6 +3,18 @@
     box-sizing: border-box;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    font: bold 4rem sans-serif;
+    color: whitesmoke;
+    margin: 40px;
+}
+
+body {
+    background-image: linear-gradient(0deg, #98c4ff 0%, #092050 100% )
+}
+
 main {
     display: flex;
     flex-wrap: wrap;

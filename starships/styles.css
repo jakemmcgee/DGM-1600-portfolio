@@ -1,3 +1,19 @@
+body {
+    background-image: linear-gradient(45deg, #aeb8b9 0%, #00122c 100%);
+}
+
+h1 {
+    font: bold 4rem sans-serif;
+    margin-top: 40px;
+    color: rgb(241, 204, 38);
+}
+
+h4 {
+    font: bold 1rem sans-serif;
+    margin-left: 20px;
+    color: rgb(241, 204, 38);
+}
+
 :root {
     margin: 0;
     box-sizing: border-box;
@@ -17,7 +33,7 @@ li {
 }
 
 .main {
-    margin: 8rem;
+    margin: 16rem;
 }
 
 header, footer {
