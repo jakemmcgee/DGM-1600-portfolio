@@ -49,3 +49,10 @@ function populateShipView(shipData) {
 }
 
 populateNav(starships)
+
+function addStarField(element, numStars) {
+    element.styles.setProperty('backgound-color', 'black')
+    for (let 1 = 0; i < numStars; i++) {
+        
+    }
+}
