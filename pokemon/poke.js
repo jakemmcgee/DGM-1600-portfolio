@@ -1,3 +1,5 @@
+import { images } from pokemon-img 
+
 async function getAPIData() {
     try {
         const response = await fetch(url)
@@ -73,5 +75,5 @@ function getImageFileName(pokemon) {
         return `00${pokemon.id}`
     } else if (pokemon.id > 9 && pokemon.id < 100) {
         return `0${pokemon.id}`
-    }
     } 
+}
