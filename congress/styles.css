@@ -1,0 +1,12 @@
+body {
+    background-image: linear-gradient(90deg, blue, white, red);
+}
+
+h1 {
+    color: rgb(0, 48, 119);
+    font: bold 4rem sans-serif;
+    display: flex;
+    justify-content: center;
+    border: 7px solid rgb(243, 193, 30);
+}
+
