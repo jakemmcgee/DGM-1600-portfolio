@@ -73,18 +73,5 @@ function getImageFileName(pokemon) {
         return `00${pokemon.id}`
     } else if (pokemon.id > 9 && pokemon.id < 100) {
         return `0${pokemon.id}`
-    } else if (pokemon.id > 99 && pokemon.id < 810) {
-        return `${pokemon.id}`
     }
-    return `pokeball`
-}
-
-function Pokemon(name, height, weight, type) {
-    this.name = name
-    this.height = height
-    this.weight = weight
-    this.type = type
-    this.id = 900
-}
-
-let newPokemon = new Pokemon('mightymini', 400, 140, ['run', 'jump'])
+    } 
