@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(45deg, #e2e2e2 0%, #8b8a8a 45%);
+    background-image: linear-gradient(45deg, #8b8a8a 0%, #e2e2e2 45%);
 }
 
 h1 {
@@ -25,28 +25,12 @@ footer {
     border: 0.66rem solid rgb(0, 99, 228);
 }
 
-#teambutton {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font: normal sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgb(255, 206, 45);
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+#conferencebuttons {
+    display: flex;
+    justify-content: space-evenly;
     margin-top: 60px;
     margin-bottom: 120px;
 }
-
-
 
 #teamgrid {
     display: flex;
