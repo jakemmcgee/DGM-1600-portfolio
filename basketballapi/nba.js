@@ -1,4 +1,4 @@
-import { confName } from '../data/nbaapi.js'
+import { confName } from "nbaapi"
 
 const teamGrid = document.querySelector('#teamGrid')
 const eastButton = document.querySelector('#eastButton')
