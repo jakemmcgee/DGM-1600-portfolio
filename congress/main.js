@@ -15,7 +15,7 @@ birthdayButton.addEventListener('click', () => {
 
 function populateSenatorDiv(simpleSenators) {
     removeChildren(senatorGrid)
-    simpleSenators.forEach(senator => {
+    simpleSenators.forEach(senators => {
         let senDiv = document.createElement('div')
         let senFigure = document.createElement('figure')
         let figImg = document.createElement('img')
@@ -24,8 +24,8 @@ function populateSenatorDiv(simpleSenators) {
         if (senator.party === 'R') partyIcon.className = 'fas fa-republican'
         if (senator.party === 'D') partyIcon.className = 'fas fa-democrat'
         if (senator.party === 'ID') partyIcon.className = 'fas fa-star'
-        figImg.src = senator.imgURL
-        figCaption.textContent = senator.name
+        figImg.src = senators.imgURL
+        figCaption.textContent = senators.name
 
         figCaption.appendChild(partyIcon)
         senFigure.appendChild(figImg)

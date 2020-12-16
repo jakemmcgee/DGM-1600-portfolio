@@ -1,9 +1,11 @@
+export const confName  = [ 
+
 {
-"api" ; {
-    "status" ; 200
-    "message" ; "GET teams/confName/east"
-    "results" ; 20
-    "filters" ; [
+"api" : {
+    "status" : 200,
+    "message" : "GET teams/confName/east",
+    "results" : 20,
+    "filters" : [
         0 , "teamId",
         1 , "league",
         2 , "city",
@@ -11,9 +13,9 @@
         4 , "nickName",
         5 , "confName",
         6 , "divName",
-    ]
+    ],
 
-    "teams";[
+    "teams":[
     0 , {
         "city" : "Atlanta",
         "fullName" : "Atlanta Hawks",
@@ -377,3 +379,4 @@
 ]
 }
 }
+]
