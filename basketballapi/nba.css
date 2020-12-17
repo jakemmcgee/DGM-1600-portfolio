@@ -25,14 +25,14 @@ footer {
     border: 0.66rem solid rgb(0, 99, 228);
 }
 
-#conferencebuttons {
+.conferencebuttons {
     display: flex;
     justify-content: space-evenly;
     margin-top: 60px;
     margin-bottom: 120px;
 }
 
-#teamgrid {
+.teamgrid {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
