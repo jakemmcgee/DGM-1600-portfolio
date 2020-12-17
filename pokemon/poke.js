@@ -1,4 +1,4 @@
-import { images } from pokemon-img 
+//import { images } from pokemon-img 
 
 async function getAPIData() {
     try {
@@ -11,7 +11,7 @@ async function getAPIData() {
 }
 
 function loadPage(data) {
-    getAPIData('https://pokeapi.co/api/v2/pokemon').then
+    getAPIData('https://pokeapi.co/api/v2/pokemon?limit=25').then
     (async(data) => {
         for (const pokemon of data.results) {
             await getAPIData(pokemon.url).then((pokeData) => {

@@ -11,13 +11,6 @@ for (let i = 0; i < 7; i++) {
 
     const foundFilm = films.find(film => getLastNumber(film.url) === (i + 1).toString())
 
-    console.log(getLastNumber(films[0].url))
-    const foundFilm = films.find(film => {
-        let lastNum = getLastNumber(film.url)
-        console.log(lastNum, i + 1) 
-        return getLastNumber(film.url) === (i + 1)
-    })
-
     figCaption.textContent = foundFilm.title
 
     figure.appendChild(figImg)
