@@ -7,12 +7,12 @@ h1 {
     display: flex;
     justify-content: center;
     font: bold 4rem sans-serif;
-    color: whitesmoke;
+    color: rgb(182, 180, 180);
     margin: 40px;
 }
 
 body {
-    background-image: linear-gradient(0deg, #98c4ff 0%, #092050 100% )
+    background-color: rgb(6, 10, 24);
 }
 
 main {
