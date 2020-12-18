@@ -37,5 +37,22 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    margin: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
+.teamBox {
+    width: 200px;
+    height: 200px;
+    /* background-color: tomato; */
+}
+
+.teamFig {
+text-align: center;
+font: normal 1rem sans-serif;
+}
+
+.teamLogo {
+    width: 100%;
+}
