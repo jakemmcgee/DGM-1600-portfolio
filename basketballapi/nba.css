@@ -32,7 +32,7 @@ footer {
     margin-bottom: 120px;
 }
 
-.teamgrid {
+#teamgrid {
     display: flex;
     flex-wrap: wrap;
     align-items: center;

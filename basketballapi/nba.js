@@ -1,23 +1,28 @@
 import { teams } from "../data/nbaapi.js"
-	console.log(teams)
+	console.log(teams[0].confName)
+	console.log(teams.filter(x => x.confName === 'East'))
+	console.log(teams.filter(x => x.confName === 'West'))
+	//console.log(teams)
 //import { removeChildren } from "../utils/index.js"
-
+const gridContainer = document.getElementById('teamgrid')
+let box = document.createElement('div')
+box.appendChild(gridContainer)
 // const teamGrid = document.querySelector('.teamGrid')
 const east = teams.filter(team => {
-	console.log(team)
+	//console.log(team)
 	team.confName === 'East'
 })
-	console.log(east)
-const west = teams.filter(team => team.confName === 'West')
-	console.log(west)
+// 	//console.log(east)
+// const west = teams.filter(team => team.confName === 'West')
+// 	//console.log(west)
 
-eastButton.addEventListener('click', () => populateDom, 
-    confSort()
-)
+// eastButton.addEventListener('click', () => populateDom, 
+//     confSort()
+// )
 
-westButton.addEventListener('click', () => populateDom,
-    confSort()
-)
+// westButton.addEventListener('click', () => populateDom,
+//     confSort()
+// )
 
 // function populateTeamsDiv(allTeams) {
 	//removeChildren(teamGrid)
@@ -42,16 +47,17 @@ westButton.addEventListener('click', () => populateDom,
 
 //}
 
-function loadPage(data) {
-    getAPIData(nbaapiData).then
-    (async(data) => {
-        for (const east of data.results) {
-            await getAPIData(east.url).then((nbaapiData) => {
-            populateTeamsDiv(nbaapiData)
-            })
-        }
-    })
-}
+// function loadPage(data) {
+//     getAPIData(nbaapiData).then
+//     (async(data) => {
+//         for (const east of data.results) {
+//             await getAPIData(east.url).then((nbaapiData) => {
+// 			populateTeamsDiv(nbaapiData)
+// 			console.log("loadPage "+nbaapiData)
+//             })
+//         }
+//     })
+// }
 
 const eastButton = document.querySelector('.eastButton')
 
